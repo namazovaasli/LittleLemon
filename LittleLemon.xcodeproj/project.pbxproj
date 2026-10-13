@@ -6,20 +6,62 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		31C734DC307E80ED00B70EC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31B0E8F13076E23E009D36AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31B0E8F83076E23E009D36AD;
+			remoteInfo = LittleLemon;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		31B0E8F93076E23E009D36AD /* LittleLemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31C734D8307E80ED00B70EC4 /* LittleLemonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		31C734D3307E80B300B70EC4 /* Exceptions for "LittleLemon" folder in "LittleLemon" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Menuitemtests.swift,
+			);
+			target = 31B0E8F83076E23E009D36AD /* LittleLemon */;
+		};
+		31C734E2307E812400B70EC4 /* Exceptions for "LittleLemon" folder in "LittleLemonTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Menuitemtests.swift,
+			);
+			target = 31C734D7307E80ED00B70EC4 /* LittleLemonTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		31B0E8FB3076E23E009D36AD /* LittleLemon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				31C734D3307E80B300B70EC4 /* Exceptions for "LittleLemon" folder in "LittleLemon" target */,
+				31C734E2307E812400B70EC4 /* Exceptions for "LittleLemon" folder in "LittleLemonTests" target */,
+			);
 			path = LittleLemon;
+			sourceTree = "<group>";
+		};
+		31C734D9307E80ED00B70EC4 /* LittleLemonTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = LittleLemonTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		31B0E8F63076E23E009D36AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		31C734D5307E80ED00B70EC4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -31,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				31B0E8FB3076E23E009D36AD /* LittleLemon */,
+				31C734D9307E80ED00B70EC4 /* LittleLemonTests */,
 				31B0E8FA3076E23E009D36AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				31B0E8F93076E23E009D36AD /* LittleLemon.app */,
+				31C734D8307E80ED00B70EC4 /* LittleLemonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +108,27 @@
 			productReference = 31B0E8F93076E23E009D36AD /* LittleLemon.app */;
 			productType = "com.apple.product-type.application";
 		};
+		31C734D7307E80ED00B70EC4 /* LittleLemonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31C734DE307E80ED00B70EC4 /* Build configuration list for PBXNativeTarget "LittleLemonTests" */;
+			buildPhases = (
+				31C734D4307E80ED00B70EC4 /* Sources */,
+				31C734D5307E80ED00B70EC4 /* Frameworks */,
+				31C734D6307E80ED00B70EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31C734DD307E80ED00B70EC4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				31C734D9307E80ED00B70EC4 /* LittleLemonTests */,
+			);
+			name = LittleLemonTests;
+			productName = LittleLemonTests;
+			productReference = 31C734D8307E80ED00B70EC4 /* LittleLemonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -77,6 +142,10 @@
 					31B0E8F83076E23E009D36AD = {
 						CreatedOnToolsVersion = 27.0;
 					};
+					31C734D7307E80ED00B70EC4 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 31B0E8F83076E23E009D36AD;
+					};
 				};
 			};
 			buildConfigurationList = 31B0E8F43076E23E009D36AD /* Build configuration list for PBXProject "LittleLemon" */;
@@ -88,18 +157,27 @@
 			);
 			mainGroup = 31B0E8F03076E23E009D36AD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				31C734E3307E817900B70EC4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 31B0E8FA3076E23E009D36AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				31B0E8F83076E23E009D36AD /* LittleLemon */,
+				31C734D7307E80ED00B70EC4 /* LittleLemonTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		31B0E8F73076E23E009D36AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		31C734D6307E80ED00B70EC4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -112,7 +190,20 @@
 			files = (
 			);
 		};
+		31C734D4307E80ED00B70EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31C734DD307E80ED00B70EC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31B0E8F83076E23E009D36AD /* LittleLemon */;
+			targetProxy = 31C734DC307E80ED00B70EC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		31B0E9023076E247009D36AD /* Debug configuration for PBXProject "LittleLemon" */ = {
@@ -296,6 +387,46 @@
 			};
 			name = Release;
 		};
+		31C734DF307E80ED00B70EC4 /* Debug configuration for PBXNativeTarget "LittleLemonTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aslinamazova.LittleLemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LittleLemon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LittleLemon";
+			};
+			name = Debug;
+		};
+		31C734E0307E80ED00B70EC4 /* Release configuration for PBXNativeTarget "LittleLemonTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aslinamazova.LittleLemonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LittleLemon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LittleLemon";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,7 +446,26 @@
 			);
 			defaultConfigurationName = Release;
 		};
+		31C734DE307E80ED00B70EC4 /* Build configuration list for PBXNativeTarget "LittleLemonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C734DF307E80ED00B70EC4 /* Debug configuration for PBXNativeTarget "LittleLemonTests" */,
+				31C734E0307E80ED00B70EC4 /* Release configuration for PBXNativeTarget "LittleLemonTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31C734E3307E817900B70EC4 /* XCRemoteSwiftPackageReference "swift-async-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 31B0E8F13076E23E009D36AD /* Project object */;
 	validationLevel = 1;

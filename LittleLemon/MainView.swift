@@ -27,6 +27,14 @@ struct MainView: View {
                         Label("Reservation", systemImage: "square.and.pencil")
                     }
                 }
+
+            MenuItemsView()
+                .tag(2)
+                .tabItem {
+                    if !model.displayingReservationForm {
+                        Label("Menu", systemImage: "list.bullet")
+                    }
+                }
         }
     }
 }
