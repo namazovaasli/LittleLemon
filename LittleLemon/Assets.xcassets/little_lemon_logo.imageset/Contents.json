@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Little Lemon logo.png",
+      "filename" : "Image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Little Lemon logo 1.png",
+      "filename" : "Image@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Little Lemon logo 2.png",
+      "filename" : "Image@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

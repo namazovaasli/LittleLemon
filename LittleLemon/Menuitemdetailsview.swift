@@ -13,7 +13,7 @@ struct MenuItemDetailsView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 8) {
-                Image("LittleLemonLogo")
+                Image("littleLemonLogo")
                     .resizable()
                     .scaledToFit()
                     .frame(maxHeight: 360)

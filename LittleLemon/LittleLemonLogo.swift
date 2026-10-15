@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LittleLemonLogo: View {
     var body: some View {
-        Image("little_lemon_logo")
+        Image("littleLemonLogo")
             .resizable()
             .scaledToFit()
             .frame(height: 150)

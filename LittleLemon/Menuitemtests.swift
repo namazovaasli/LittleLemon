@@ -22,13 +22,15 @@ final class MenuItemTests: XCTestCase {
     }
 
     func testMenuItemIngredients_whenInitializingWithIngredients_expectIngredientsEqualInitializedValue() {
-       
+        
+        let title = "Pasta"
         let ingredients: [Ingredient] = [.pasta, .tomatoSauce]
 
-       
-        let menuItem = MenuItem(title: "Pasta", ingredients: ingredients)
+        
+        let menuItem = MenuItem(title: title, ingredients: ingredients)
 
        
+        XCTAssertEqual(menuItem.title, title)
         XCTAssertEqual(menuItem.ingredients, ingredients)
     }
 }
